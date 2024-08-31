@@ -16,7 +16,7 @@ parser.add_argument('-location', help= 'Consultar el clima, segùn locación')
 parser.add_argument('-format', help= 'elige el formato de salida', choices= ['json', 'txt', 'csv'])
 args = parser.parse_args() # El método parse_args() analiza el argumento y devuelve un objeto que contiene los valores de los argumentos analizados.
 city = args.location # Ahora es posible acceder a los valores de los argumentos analizados
-f = args.format # Acceder a los valores del formato
+f = args.format # Acceder a los valores del formato que el usuario quiera
 
 # Aca visitamos la api para solicitar la info
 API_key = os.getenv('API_key')
@@ -24,8 +24,7 @@ url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}
 r = requests.get(url)
 
 response = r.json() # Se recibirà la respuesta en formato json
-# print(response)
-# print(URL)
+
 
 # Extraer datos de la respuesta
 coordenada = response['coord']
@@ -42,21 +41,21 @@ country = sys['country']
 
 # En este diccionario se almaenará los datos de esa variable
 data = {
+    'country': country,
+    'city_name': city_name,
     'description': description,
     'humidity': humidity,
     'temp': temp,
     'temp_min': temp_min,
-    'temp_max': temp_max,
-    'city_name': city_name,
-    'country': country
+    'temp_max': temp_max
 }
-
+# Función para convertir al tipo de dato
 def data_type(d, f):
     if f == 'json':
         print(json.dumps(d, indent=4))
     elif f == 'txt':
-        for key, value in d:
-            print(f"{key}:{value}")
+        for key, value in d.items():  # Usar d.items() para iterar sobre clave-valor
+            print(f"{key}: {value}")
     elif f == 'csv':
         # Crear lista de claves y lista de valores
         keys = ",".join(d.keys())
