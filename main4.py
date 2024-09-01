@@ -8,7 +8,7 @@ import json
 def main():
     parser = argparse.ArgumentParser(description="Aplicación CLI para consultar el clima.")
     parser.add_argument('-location', help='Consultar el clima según locación')
-    parser.add_argument('-format', help='Elige el formato de salida: json, txt o csv', choices=['json', 'txt', 'csv'])
+    parser.add_argument('-format', help='Elige el formato de salida: json, txt o csv', choices=['json', 'txt', 'csv'], default="txt")
     args = parser.parse_args()
 
     # Almacenamos los datos en las variables 
