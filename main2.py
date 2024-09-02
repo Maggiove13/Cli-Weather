@@ -23,7 +23,7 @@ def get_api_data():
     # Crear los comandos
     parser.add_argument('-location', help='Consultar el clima, según locación', required=True)
     parser.add_argument('-format', help='Elige el formato de salida: json, txt o csv', choices=['json', 'txt', 'csv'])
-    args = parser.parse_args() # Acceder a los valores analizados
+    args = parser.parse_args() # Acceder a lojs valores analizados
     city = args.location
     f = args.format
 
