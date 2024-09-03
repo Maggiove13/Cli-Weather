@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 # Ejecutar la aplicacion con parametros predeterminados
 echo "Ejecutando la aplicacion..."
-python main.py -location "Madrid" -format json
+python main4.py -location "Madrid" -format json
 
 echo "-Script completado!"
 
