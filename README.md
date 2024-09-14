@@ -46,7 +46,8 @@ API_key=your_api_key
 
 This project uses ruff as a tool to make sure that the code follows proper formatting and linting before each commit. Make sure that the pre-commit hook is configured correctly.
 ````
-pip install pre-commit````
+pip install pre-commit
+````
 
 4.1- Configure pre-commit hooks:
 
@@ -74,6 +75,7 @@ CSV: CSV format.
 python main.py -location "Asuncion" -format json
 ````
 Where:
+
 ````
 -location: Specifies the name of the city to query.
 -format: Defines the data output format (json, txt, or csv).
@@ -82,7 +84,8 @@ Where:
 ####Error Handling
 If the API key is invalid, the following message will be shown:
 ```
-Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.```
+Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.
+```
 
   If the location is not found:
 
