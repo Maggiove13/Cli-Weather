@@ -1,7 +1,7 @@
 # CLI Weather Aplication
 This Python program allows users to query the weather of a specific location using the OpenWeatherMap API. You can get information such as temperature, humidity, weather description, among others, and choose the format in which the output will be displayed (JSON, text or CSV).
 
-##Features
+## Features
 - Query the weather of any city through the OpenWeatherMap API.
 - Option to choose the output format: JSON, TXT or CSV.
 - Use of pre-commit hooks with ruff to keep the code clean and well formatted.
@@ -19,7 +19,9 @@ pip install -r requirements.txt.
 ```
 - An [OpenWeatherMap](https://openweathermap.org/api "OpenWeatherMap") API key (you register and you get a free key)
 
-###Installation:
+
+
+# Installation:
 1- Clone the repository on your local machine:
 ```
 git clone https://github.com/usuario/repositorio.git
@@ -57,7 +59,7 @@ After installing pre-commit, run the following command to install the hooks conf
 pre-commit install
 ````
 
-### Usage
+### Usage:
 This program is run from the terminal and accepts certain arguments to customize its operation.
 
 Query the weather for a location
@@ -71,7 +73,7 @@ JSON: Structured format as JSON.
 TXT: Plain text (default).
 CSV: CSV format.
 
-#####example:
+##### example:
 ````
 python main.py -location "Asuncion" -format json
 ````
@@ -81,7 +83,7 @@ Where:
 -format: Defines the data output format (json, txt, or csv).
 ````
 
-###Error Handling
+### Error Handling:
 If the API key is invalid, the following message will be shown:
 ```
 Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.
@@ -91,9 +93,8 @@ Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuev
 ````
 Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.
 ````
-------------
 
-##Project Structure
+## Project Structure
 The project is divided into modules to maintain an organized code:
 - api.py: Contains the functions related to the API connection.
 
