@@ -77,8 +77,8 @@ Where:
 -location: Specifies the name of the city to query.
 -format: Defines the data output format (json, txt, or csv).
 ````
+## Error Handling
 
-#Error Handling
 If the API key is invalid, the following message will be shown:
 ```
 Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.
