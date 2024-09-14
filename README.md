@@ -56,6 +56,7 @@ After installing pre-commit, run the following command to install the hooks conf
 ````
 pre-commit install
 ````
+
 ### Usage
 This program is run from the terminal and accepts certain arguments to customize its operation.
 
@@ -79,6 +80,7 @@ Where:
 -location: Specifies the name of the city to query.
 -format: Defines the data output format (json, txt, or csv).
 ````
+
 ####Error Handling
 
 If the API key is invalid, the following message will be shown:
@@ -91,7 +93,9 @@ Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuev
 Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.
 ````
 ------------
+
 ##Project Structure
+
 The project is divided into modules to maintain an organized code:
 - api.py: Contains the functions related to the API connection.
 
