@@ -48,8 +48,8 @@ def main():
             print(
                 "Error: No se pudo completar la solicitud. Por favor intenta de nuevo más tarde."
             )
-    except Exception:
-        handle_general_errors()
+    except Exception as errors:
+        handle_general_errors(errors)
 
 
 if __name__ == "__main__":
