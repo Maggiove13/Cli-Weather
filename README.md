@@ -81,8 +81,7 @@ Where:
 -format: Defines the data output format (json, txt, or csv).
 ````
 
-####Error Handling
-
+###Error Handling
 If the API key is invalid, the following message will be shown:
 ```
 Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.
@@ -95,7 +94,6 @@ Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de 
 ------------
 
 ##Project Structure
-
 The project is divided into modules to maintain an organized code:
 - api.py: Contains the functions related to the API connection.
 
