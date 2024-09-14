@@ -46,16 +46,15 @@ API_key=your_api_key
 
 This project uses ruff as a tool to make sure that the code follows proper formatting and linting before each commit. Make sure that the pre-commit hook is configured correctly.
 ````
-pip install pre-commit````
-
+pip install pre-commit
+````
 4.1- Configure pre-commit hooks:
 
 After installing pre-commit, run the following command to install the hooks configured in .pre-commit-config.yaml:
 ````
-pre-commit install````
-
-
-### Usage
+pre-commit install
+````
+# Usage
 This program is run from the terminal and accepts certain arguments to customize its operation.
 
 Query the weather for a location
@@ -73,6 +72,7 @@ CSV: CSV format.
 python main.py -location "Asuncion" -format json
 ````
 Where:
+
 ````
 -location: Specifies the name of the city to query.
 -format: Defines the data output format (json, txt, or csv).
@@ -84,6 +84,9 @@ Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuev
 ```
 
   If the location is not found:
+
+````
+Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.
 ````
 Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.
 ````
