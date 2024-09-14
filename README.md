@@ -108,4 +108,4 @@ The project is divided into modules to maintain an organized code:
 
 - .pre-commit-config.yaml: Configuration file for pre-commit hooks.
 
-This instruction file provides the user with all the information needed to install and use the program, not including the cache part. You can customize it according to your needs and add more details if necessary.
+This instruction file provides the user with all the information needed to install and use the program. You can customize it according to your needs and add more details if necessary.
