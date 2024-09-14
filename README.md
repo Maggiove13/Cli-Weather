@@ -75,20 +75,20 @@ python main.py -location "Asuncion" -format json
 Where:
 ````
 -location: Specifies the name of the city to query.
--format: Defines the data output format (json, txt, or csv).````
-
-
+-format: Defines the data output format (json, txt, or csv).
+````
 ####Error Handling
 If the API key is invalid, the following message will be shown:
 ```
-Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.```
+Error: La clave API no es válida. Por favor verifica tu clave e intenta de nuevo.
+```
 
   If the location is not found:
 ````
-Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.````
+Error: Ubicación no encontrada. Por favor verifica la ortografía e intenta de nuevo.
+````
 
 ------------
-
 ##Project Structure
 The project is divided into modules to maintain an organized code:
 - api.py: Contains the functions related to the API connection.
