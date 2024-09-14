@@ -11,3 +11,4 @@ __pycache__
 /.env
 # # Ignorar la carpeta de ruff cache
 .ruff_cache
+/.ruff_cache
