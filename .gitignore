@@ -2,6 +2,7 @@
 .venv/
 /.venv/
 /.venv
+
 # Ignorar toda la carpeta __pycache__
 __pycache__
 /__pycache__/
@@ -11,6 +12,7 @@ __pycache__/
 .env
 /.env
 .env/
+
 # # Ignorar la carpeta de ruff cache
 .ruff_cache
 /.ruff_cache
