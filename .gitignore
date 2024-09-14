@@ -1,0 +1,13 @@
+# # Ignorar la carpeta de variables temporales
+.venv/
+/.venv/
+# Ignorar toda la carpeta __pycache__
+__pycache__
+/__pycache__/
+__pycache__/
+__pycache__
+# Ignorar el archivo de variables de entorno
+.env
+/.env
+# # Ignorar la carpeta de ruff cache
+.ruff_cache
